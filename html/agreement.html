@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper admin-menu">
+			<header class="header" id="header">
+				<div class="container">
+					<h1 class="site__name">stroyMat</h1>
+					<div class="feetback">
+						<a class="feetback__link" href="mailto:stroymat@gmail.com"
+							>stroymat@gmail.com</a
+						>
+						<a class="feetback__link" href="tel:+380984512341">+380984512341</a>
+						<button class="button-basic"><a href="">Всі матеріали</a></button>
+					</div>
+				</div>
+			</header>
+			<div class="background-main">
+				<div class="container">
+					<div class="agreement">
+						<div class="agreement__filter">
+							<div class="warehouse__header warehouse__item">
+								Фільтр
+								<div class="warehouse__close warehouse__open">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<form method="GET" class="warehouse__setting">
+								<div class="warehouse__group">
+									<div class="warehouse__title">Ціна:</div>
+
+									<div class="warehouse__bottom">
+										<div>
+											<label for="priceFrom">Від:</label>
+											<input
+												id="priceFrom"
+												type="number"
+												placeholder="Ціна від..."
+												class="warehouse__input input-basic"
+											/>
+										</div>
+										<div>
+											<label for="priceTo">До:</label>
+											<input
+												id="priceTo"
+												type="number"
+												placeholder="Ціна до..."
+												class="warehouse__input input-basic"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="warehouse__group">
+									<div class="warehouse__title">
+										<label class="postman-label" for="postman"
+											>Постачальник:</label
+										>
+									</div>
+
+									<div class="warehouse__bottom">
+										<div>
+											<select
+												size="1"
+												class="postman select-basic"
+												id="postman"
+												name="postman"
+											>
+												<option selected disabled>
+													Виберіть постачальника
+												</option>
+												<option>COMP 3</option>
+												<option>COMP 2</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="warehouse__group">
+									<div class="warehouse__title">Дата:</div>
+
+									<div class="warehouse__bottom">
+										<div>
+											<label for="dateFrom">Від:</label>
+											<input
+												id="dateFrom"
+												type="date"
+												placeholder="Дата від..."
+												class="warehouse__input input-basic"
+											/>
+										</div>
+										<div>
+											<label for="dateTo">До:</label>
+											<input
+												id="dateTo"
+												type="date"
+												placeholder="Дата до..."
+												class="warehouse__input input-basic"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="warehouse__group">
+									<div class="warehouse__title">
+										<label class="postman-label" for="unit"
+											>Виберіть одиниці вимірювання:</label
+										>
+									</div>
+
+									<div class="warehouse__bottom">
+										<div>
+											<select
+												size="1"
+												class="unit select-basic"
+												id="unit"
+												name="unit"
+											>
+												<option selected disabled>Одиниці вимірювання</option>
+												<option>КГ</option>
+												<option>Шт</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="warehouse__group">
+									<div class="warehouse__title">
+										<label class="postman-label" for="type"
+											>Виберіть тип:</label
+										>
+									</div>
+
+									<div class="warehouse__bottom">
+										<div>
+											<select
+												size="1"
+												class="type select-basic"
+												id="type"
+												name="type"
+											>
+												<option selected disabled>Виберіть тип</option>
+												<option>плитка</option>
+												<option>дошка</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="warehouse__group">
+									<div class="warehouse__title">
+										<label class="postman-label" for="status"
+											>Виберіть статус:</label
+										>
+									</div>
+
+									<div class="warehouse__bottom">
+										<div>
+											<select
+												size="1"
+												class="type select-basic"
+												id="status"
+												name="status"
+											>
+												<option selected disabled>Виберіть статус</option>
+												<option>плитка</option>
+												<option>дошка</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<!-- <input type="text"> -->
+							</form>
+						</div>
+						<div class="agreement__row">
+							<div class="agreement__item agreement__item-title">
+								<div class="agreement__status">Статус</div>
+								<div class="agreement__name">Назва</div>
+								<div class="agreement__count">Кількість</div>
+								<div class="agreement__price">Ціна</div>
+								<div class="agreement__fullPrice">Всього</div>
+								<div class="agreement__date">Дата замовлення</div>
+								<div class="agreement__close1"></div>
+							</div>
+							<div class="agreement__block">
+								<div class="agreement__item">
+									<div class="agreement__status agreement__status-have">
+										На складі
+									</div>
+									<div class="agreement__name">Цегла якісна...</div>
+									<div class="agreement__count">5000 шт</div>
+									<div class="agreement__price">50 грн / шт</div>
+									<div class="agreement__fullPrice">25 000 грн lorem20</div>
+									<div class="agreement__date">16:09.2023 15:35</div>
+									<div class="agreement__close1">
+										<div class="agreement__close">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<div class="agreement__full">
+									<div class="material">
+										<h3>Цегла якісна довговічна</h3>
+										<div class="material__top">
+											<div class="material__img">
+												<img src="img/chegla.jpg" alt="" />
+											</div>
+											<div class="material__code">Код: 1002</div>
+											<div class="material__topCenter">
+												<div class="material__price">
+													Ціна: <br />25 <span>грн / 1 шт</span>
+												</div>
+												<div class="material__description">
+													<h2>Опис:</h2>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Debitis eligendi placeat velit ducimus odio
+													obcaecati itaque sed dicta beatae accusamus. Accusamus
+													ab facilis adipisci delectus quidem! Dolores aperiam
+													quia in esse architecto est rerum perferendis nemo
+													pariatur nulla quibusdam natus molestias commodi nam
+													non nihil, officia ex labore laborum quaerat beatae
+													hic inventore, adipisci distinctio? Animi explicabo
+													cupiditate commodi laudantium quas, vero eius, velit
+													facilis porro ipsum quaerat rerum dolore autem odio
+													quam totam laboriosam provident fuga voluptate,
+													consectetur repudiandae. Tenetur, rem labore assumenda
+													iusto voluptatibus architecto nobis velit quibusdam
+													numquam quasi. Ipsam dicta provident totam incidunt
+													iure similique praesentium.
+												</div>
+											</div>
+										</div>
+										<div class="material__characteristics">
+											<h2 class="material__characteristic">Характеристики</h2>
+											<div class="material__characteristic">
+												Термін придатності : 150 років
+											</div>
+											<div class="material__characteristic">
+												Розмір: 25х10х5
+											</div>
+											<div class="material__characteristic">
+												Країна виробник: Україна
+											</div>
+											<div class="material__characteristic">
+												Бренд : Inter Brick
+											</div>
+											<div class="material__characteristic">
+												Склад: Вул. якась-то 54
+											</div>
+											<div class="material__characteristic">
+												Постачальник: corpotation
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="agreement__block">
+								<div class="agreement__item">
+									<div class="agreement__status agreement__status-agreement">
+										Замовлений
+									</div>
+									<div class="agreement__name">Цегла якісна...</div>
+									<div class="agreement__count">5000 шт</div>
+									<div class="agreement__price">50 грн / шт</div>
+									<div class="agreement__fullPrice">25 000 грн</div>
+									<div class="agreement__date">16:09.2023 15:35</div>
+									<div class="agreement__close1">
+										<div class="agreement__close">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<div class="agreement__full">
+									<div class="material">
+										<h3>Цегла якісна довговічна</h3>
+										<div class="material__top">
+											<div class="material__img">
+												<img src="img/chegla.jpg" alt="" />
+											</div>
+											<div class="material__code">Код: 1002</div>
+											<div class="material__topCenter">
+												<div class="material__price">
+													Ціна: <br />25 <span>грн / 1 шт</span>
+												</div>
+												<div class="material__description">
+													<h2>Опис:</h2>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Debitis eligendi placeat velit ducimus odio
+													obcaecati itaque sed dicta beatae accusamus. Accusamus
+													ab facilis adipisci delectus quidem! Dolores aperiam
+													quia in esse architecto est rerum perferendis nemo
+													pariatur nulla quibusdam natus molestias commodi nam
+													non nihil, officia ex labore laborum quaerat beatae
+													hic inventore, adipisci distinctio? Animi explicabo
+													cupiditate commodi laudantium quas, vero eius, velit
+													facilis porro ipsum quaerat rerum dolore autem odio
+													quam totam laboriosam provident fuga voluptate,
+													consectetur repudiandae. Tenetur, rem labore assumenda
+													iusto voluptatibus architecto nobis velit quibusdam
+													numquam quasi. Ipsam dicta provident totam incidunt
+													iure similique praesentium.
+												</div>
+											</div>
+										</div>
+										<div class="material__characteristics">
+											<form
+												method="POST"
+												class="material__characteristic form-characteristic"
+											>
+												<div class="form-ch">
+													<label class="postman-label" for="price"
+														>Введіть ціну за 1 од. товару, грн:</label
+													>
+													<input
+														id="price"
+														type="number"
+														placeholder="Ціна за 1 од. товару"
+														class="input-basic"
+													/>
+												</div>
+												<input
+													type="submit"
+													value="Відправити на продажу"
+													class="button-basic"
+												/>
+											</form>
+											<h2 class="material__characteristic">Характеристики</h2>
+											<div class="material__characteristic">
+												Термін придатності : 150 років
+											</div>
+											<div class="material__characteristic">
+												Розмір: 25х10х5
+											</div>
+											<div class="material__characteristic">
+												Країна виробник: Україна
+											</div>
+											<div class="material__characteristic">
+												Бренд : Inter Brick
+											</div>
+											<div class="material__characteristic">
+												Склад: Вул. якась-то 54
+											</div>
+											<div class="material__characteristic">
+												Постачальник: corpotation
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pagination">
+						<a href="">1</a>
+						<a href="">2</a>
+						<a href="">3</a>
+						<a href="">4</a>
+						<a href="">5</a>
+					</div>
+				</div>
+			</div>
+			<footer class="footer" id="footer">
+				<div class="container">
+					<div class="feetback">
+						<p>Телефонуйте з 8:00 до 20:00 без вихідних</p>
+						<a href="tel:+380984512341">+380984512341</a>
+					</div>
+					<ul class="svg-row">
+						<a href="#">
+							<svg width="42" height="75">
+								<use class="svg-use" href="./img/svg/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="76" height="69">
+								<use class="svg-use" href="./img/svg/sprite.svg#twitter"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="74" height="73">
+								<use
+									class="svg-use"
+									href="./img/svg/sprite.svg#instagram"
+								></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="85" height="61">
+								<use class="svg-use" href="./img/svg/sprite.svg#youtube"></use>
+							</svg>
+						</a>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script src="js/js.js"></script>
+</html>

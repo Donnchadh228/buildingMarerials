@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper wrapper-full">
+			<header class="header" id="header">
+				<div class="container">
+					<a href="index.html" class="site__name">stroyMat</a>
+					<div class="feetback">
+						<a class="feetback__link" href="mailto:stroymat@gmail.com"
+							>stroymat@gmail.com</a
+						>
+						<a class="feetback__link" href="tel:+380984512341">+380984512341</a>
+						<button class="button-basic">
+							<a href="warehouse.html">Всі матеріали</a>
+						</button>
+					</div>
+				</div>
+			</header>
+			<div class="background-main">
+				<div class="container st-wr">
+					<form action="" method="POST" class="st-wr-form add_ma">
+						<h3>Додавання матеріалу</h3>
+						<div class="add_material">
+							<label class="postman-label" for="postman"
+								>Виберіть постачальника:</label
+							>
+							<select size="1" class="select-basic" id="postman" name="postman">
+								<option selected disabled>Виберіть постачальника</option>
+								<option>плитка</option>
+								<option>дошка</option>
+							</select>
+						</div>
+						<div class="add_material">
+							<label class="postman-label" for="name_matrerial"
+								>Введіть назву матераілу:</label
+							>
+							<input
+								id="name_matrerial"
+								type="text"
+								placeholder="Назва матеріалу..."
+								class="input-basic"
+							/>
+						</div>
+						<div class="add_material">
+							<label class="postman-label" for="img_material"
+								>Введіть назву матераілу:</label
+							>
+							<input
+								id="img_material"
+								accept="image/*"
+								type="file"
+								class="input-basic"
+							/>
+						</div>
+						<div class="add_material">
+							<label class="postman-label" for="description_material"
+								>Введіть назву матераілу:</label
+							>
+							<textarea
+								name="description_material"
+								id="description_material"
+								cols="30"
+								rows="10"
+								placeholder="Опис..."
+								class="input-basic"
+							></textarea>
+						</div>
+						<div class="add_material">
+							<label class="postman-label" for="price_material"
+								>Ціна за 1 товару, грн:</label
+							>
+							<input
+								id="price_material"
+								name="price_material"
+								type="number"
+								class="input-basic"
+								placeholder="Ціна за 1 товар"
+							/>
+						</div>
+						<div class="add_material">
+							<label class="postman-label" for="size_material"
+								>Введіть розмір (якщо є):</label
+							>
+							<input
+								id="size_material"
+								name="size_material"
+								type="text"
+								class="input-basic"
+								placeholder="Наприклад: 20х20х5"
+							/>
+						</div>
+						<div class="add_material">
+							<label class="postman-label" for="type_material"
+								>Виберіть тип:</label
+							>
+							<select
+								size="1"
+								class="select-basic"
+								id="type_material"
+								name="type_material"
+							>
+								<option selected disabled>Виберіть тип</option>
+								<option>плитка</option>
+								<option>дошка</option>
+							</select>
+						</div>
+						<div class="add_material">
+							<label class="postman-label" for="brand_material"
+								>Виберіть бренд:</label
+							>
+							<select
+								size="1"
+								class="select-basic"
+								id="brand_material"
+								name="brand_material"
+							>
+								<option selected disabled>Виберіть бренд</option>
+								<option>плитка</option>
+								<option>дошка</option>
+							</select>
+						</div>
+						<input
+							type="submit"
+							value="Додати матеріал постачальника"
+							class="button-basic"
+						/>
+					</form>
+				</div>
+			</div>
+			<footer class="footer" id="footer">
+				<div class="container">
+					<div class="feetback">
+						<p>Телефонуйте з 8:00 до 20:00 без вихідних</p>
+						<a href="tel:+380984512341">+380984512341</a>
+					</div>
+					<ul class="svg-row">
+						<a href="#">
+							<svg width="42" height="75">
+								<use class="svg-use" href="./img/svg/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="76" height="69">
+								<use class="svg-use" href="./img/svg/sprite.svg#twitter"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="74" height="73">
+								<use
+									class="svg-use"
+									href="./img/svg/sprite.svg#instagram"
+								></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="85" height="61">
+								<use class="svg-use" href="./img/svg/sprite.svg#youtube"></use>
+							</svg>
+						</a>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

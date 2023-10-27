@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header" id="header">
+				<div class="container">
+					<h1 class="site__name">stroyMat</h1>
+					<div class="feetback">
+						<a class="feetback__link" href="mailto:stroymat@gmail.com"
+							>stroymat@gmail.com</a
+						>
+						<a class="feetback__link" href="tel:+380984512341">+380984512341</a>
+
+						<a class="button-basic" href="warehouse.html">Всі матеріали</a>
+					</div>
+				</div>
+			</header>
+			<div class="background-main warehouse">
+				<div class="container">
+					<div class="warehouse__row filter-open">
+						<div class="warehouse__materials warehouse__block">
+							<div class="warehouse__header">
+								<p>Сортування:</p>
+								<a
+									href="#cheap"
+									class="warehouse__cheap warehouse__sort warehouse__sort-active"
+									>Дешеві</a
+								>
+								<a
+									href="#expensive"
+									class="warehouse__expensive warehouse__sort"
+									>Дорогі</a
+								>
+								<a href="#news" class="warehouse__news warehouse__sort">Нові</a>
+							</div>
+							<div class="warehouse__content">
+								<a href="material.html" class="main__block block-material">
+									<div class="not-avaliable">Немає в наявності</div>
+									<div class="main__img img-material">
+										<img src="img/chegla.jpg" alt="" />
+									</div>
+									<h2 class="main__name name-material">Цегла</h2>
+									<p class="main__price price-material">Ціна: 25 грн / шт</p>
+
+									<p class="main__description description-material">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Voluptatibus, maxime illum! Necessitatibus neque
+										perspiciatis rem modi eligendi maiores suscipit minus.
+									</p>
+									<button class="main__button button-material button-basic">
+										Подробніше
+									</button>
+								</a>
+								<a href="#" class="main__block block-material">
+									<div class="main__img img-material">
+										<img src="img/chegla.jpg" alt="" />
+									</div>
+									<h2 class="main__name name-material">Цегла</h2>
+									<p class="main__price price-material">Ціна: 25 грн / шт</p>
+
+									<p class="main__description description-material">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Voluptatibus, maxime illum! Necessitatibus neque
+										perspiciatis rem modi eligendi maiores suscipit minus.
+									</p>
+									<button class="main__button button-material button-basic">
+										Подробніше
+									</button>
+								</a>
+								<a href="#" class="main__block block-material">
+									<div class="main__img img-material">
+										<img src="img/chegla.jpg" alt="" />
+									</div>
+									<h2 class="main__name name-material">Цегла</h2>
+									<p class="main__price price-material">Ціна: 25 грн / шт</p>
+
+									<p class="main__description description-material">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Voluptatibus, maxime illum! Necessitatibus neque
+										perspiciatis rem modi eligendi maiores suscipit minus.
+									</p>
+									<button class="main__button button-material button-basic">
+										Подробніше
+									</button>
+								</a>
+								<a href="#" class="main__block block-material">
+									<div class="main__img img-material">
+										<img src="img/chegla.jpg" alt="" />
+									</div>
+									<h2 class="main__name name-material">Цегла</h2>
+									<p class="main__price price-material">Ціна: 25 грн / шт</p>
+
+									<p class="main__description description-material">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Voluptatibus, maxime illum! Necessitatibus neque
+										perspiciatis rem modi eligendi maiores suscipit minus.
+									</p>
+									<button class="main__button button-material button-basic">
+										Подробніше
+									</button>
+								</a>
+								<a href="#" class="main__block block-material">
+									<div class="main__img img-material">
+										<img src="img/chegla.jpg" alt="" />
+									</div>
+									<h2 class="main__name name-material">Цегла</h2>
+									<p class="main__price price-material">Ціна: 25 грн / шт</p>
+
+									<p class="main__description description-material">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Voluptatibus, maxime illum! Necessitatibus neque
+										perspiciatis rem modi eligendi maiores suscipit minus.
+									</p>
+									<button class="button-material button-basic">
+										Подробніше
+									</button>
+								</a>
+								<a href="#" class="main__block block-material">
+									<div class="main__img img-material">
+										<img src="img/chegla.jpg" alt="" />
+									</div>
+									<h2 class="main__name name-material">Цегла</h2>
+									<p class="main__price price-material">Ціна: 25 грн / шт</p>
+
+									<p class="main__description description-material">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Voluptatibus, maxime illum! Necessitatibus neque
+										perspiciatis rem modi eligendi maiores suscipit minus.
+									</p>
+									<button class="button-material button-basic">
+										Подробніше
+									</button>
+								</a>
+							</div>
+						</div>
+						<div class="warehouse_filter warehouse__block">
+							<div class="warehouse__header warehouse__item">
+								Фільтр
+								<div class="warehouse__close warehouse__open">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<form method="GET" class="warehouse__setting">
+								<div class="warehouse__group">
+									<div class="warehouse__title">Ціна:</div>
+
+									<div class="warehouse__bottom">
+										<div>
+											<label for="priceFrom">Від:</label>
+											<input
+												id="priceFrom"
+												type="number"
+												placeholder="Ціна від..."
+												class="warehouse__input input-basic"
+											/>
+										</div>
+										<div>
+											<label for="priceTo">До:</label>
+											<input
+												id="priceTo"
+												type="number"
+												placeholder="Ціна до..."
+												class="warehouse__input input-basic"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="warehouse__group">
+									<div class="warehouse__title">
+										<label class="postman-label" for="postman"
+											>Постачальник:</label
+										>
+									</div>
+
+									<div class="warehouse__bottom">
+										<div>
+											<select
+												size="1"
+												class="postman select-basic"
+												id="postman"
+												name="postman"
+											>
+												<option selected disabled>
+													Виберіть постачальника
+												</option>
+												<option>COMP 3</option>
+												<option>COMP 2</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="warehouse__group">
+									<div class="warehouse__title">
+										<label class="postman-label" for="unit"
+											>Виберіть одиниці вимірювання:</label
+										>
+									</div>
+
+									<div class="warehouse__bottom">
+										<div>
+											<select
+												size="1"
+												class="unit select-basic"
+												id="unit"
+												name="unit"
+											>
+												<option selected disabled>Одиниці вимірювання</option>
+												<option>КГ</option>
+												<option>Шт</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="warehouse__group">
+									<div class="warehouse__title">
+										<label class="postman-label" for="type"
+											>Виберіть тип:</label
+										>
+									</div>
+
+									<div class="warehouse__bottom">
+										<div>
+											<select
+												size="1"
+												class="type select-basic"
+												id="type"
+												name="type"
+											>
+												<option selected disabled>Виберіть тип</option>
+												<option>плитка</option>
+												<option>дошка</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="warehouse__group">
+									<span class="warehouse__title">
+										<label class="type postman-label" for="available"
+											>Є на складі:</label
+										>
+										<input
+											type="checkbox"
+											id="available"
+											name="available"
+											value="Bike"
+										/>
+									</span>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="pagination">
+						<a href="">1</a>
+						<a href="">2</a>
+						<a href="">3</a>
+						<a href="">4</a>
+						<a href="">5</a>
+					</div>
+				</div>
+			</div>
+			<footer class="footer" id="footer">
+				<div class="container">
+					<div class="feetback">
+						<p>Телефонуйте з 8:00 до 20:00 без вихідних</p>
+						<a href="tel:+380984512341">+380984512341</a>
+					</div>
+					<ul class="svg-row">
+						<a href="#">
+							<svg width="42" height="75">
+								<use class="svg-use" href="./img/svg/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="76" height="69">
+								<use class="svg-use" href="./img/svg/sprite.svg#twitter"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="74" height="73">
+								<use
+									class="svg-use"
+									href="./img/svg/sprite.svg#instagram"
+								></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="85" height="61">
+								<use class="svg-use" href="./img/svg/sprite.svg#youtube"></use>
+							</svg>
+						</a>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script src="js/js.js"></script>
+</html>

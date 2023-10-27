@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper wrapper-full">
+			<header class="header" id="header">
+				<div class="container">
+					<a href="index.html" class="site__name">stroyMat</a>
+					<div class="feetback">
+						<a class="feetback__link" href="mailto:stroymat@gmail.com"
+							>stroymat@gmail.com</a
+						>
+						<a class="feetback__link" href="tel:+380984512341">+380984512341</a>
+						<button class="button-basic">
+							<a href="warehouse.html">Всі матеріали</a>
+						</button>
+					</div>
+				</div>
+			</header>
+			<div class="background-main">
+				<div class="container st-wr">
+					<form action="" method="POST" class="st-wr-form">
+						<h3>Видалити постачальника</h3>
+						<div>
+							<label class="postman-label" for="postman"
+								>Виберіть постачальника:</label
+							>
+							<select size="1" class="select-basic" id="postman" name="postman">
+								<option selected disabled>Виберіть постачальника</option>
+								<option>плитка</option>
+								<option>дошка</option>
+							</select>
+							<input
+								type="submit"
+								value="Видалити постачальника"
+								class="button-basic"
+							/>
+						</div>
+					</form>
+					<form action="" method="POST" class="st-wr-form">
+						<h3>Додати постачальника</h3>
+						<div>
+							<label class="postman-label" for="name_company"
+								>Назва компанії:</label
+							>
+							<input
+								id="name_company"
+								type="text"
+								placeholder="Назва компанії.."
+								class="input-basic"
+							/>
+							<br /><br />
+							<label class="postman-label" for="address_postman"
+								>Адреса постачальника:</label
+							>
+							<input
+								id="address_postman"
+								type="address_postman"
+								placeholder="Адреса постачальника.."
+								class="input-basic"
+							/>
+							<br /><br />
+							<label class="postman-label" for="phone_postman"
+								>Номер телефону:</label
+							>
+							<input
+								id="phone_postman"
+								type="phone_postman"
+								placeholder="Номер телефону.."
+								class="input-basic"
+							/>
+							<br /><br />
+							<label class="postman-label" for="email_postman">Email:</label>
+							<input
+								id="email_postman"
+								type="email_postman"
+								placeholder="Email..."
+								class="input-basic"
+							/>
+							<input type="submit" value="Додати склад" class="button-basic" />
+						</div>
+					</form>
+				</div>
+			</div>
+			<footer class="footer" id="footer">
+				<div class="container">
+					<div class="feetback">
+						<p>Телефонуйте з 8:00 до 20:00 без вихідних</p>
+						<a href="tel:+380984512341">+380984512341</a>
+					</div>
+					<ul class="svg-row">
+						<a href="#">
+							<svg width="42" height="75">
+								<use class="svg-use" href="./img/svg/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="76" height="69">
+								<use class="svg-use" href="./img/svg/sprite.svg#twitter"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="74" height="73">
+								<use
+									class="svg-use"
+									href="./img/svg/sprite.svg#instagram"
+								></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="85" height="61">
+								<use class="svg-use" href="./img/svg/sprite.svg#youtube"></use>
+							</svg>
+						</a>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
